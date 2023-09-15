@@ -2,7 +2,7 @@
 # CVE-2022-4063 - InPost Gallery < 2.1.4.1 - Unauthenticated LFI to RCE
 # Created By Im-Hanzou
 # Using GNU Parallel
-# Usage: bash fubucker.sh list.txt thread 
+# Usage: bash inpger.sh list.txt thread 
 
 yellow='\033[0;33m'
 cat << "EOF"
